@@ -134,7 +134,7 @@
                 <div class="col-6 pe-5">
                     <p class="fs-2">NEW ARRIVALS</p>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/na_1.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_1.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">BREAD COFFEE</p>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/na_2.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_2.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">GAME COFFEE</p>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/na_3.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_3.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">MINI COFFEE</p>
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/na_4.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_4.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">PINEAPPLE COFFEE</p>
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/na_5.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_5.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">LAVENDER COFFEE</p>
@@ -193,7 +193,7 @@
                 <div class="col-6 ps-5">
                     <p class="fs-2">BEST SELLING</p>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/be_1.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_6.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">COFFEE BEANS</p>
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/be_2.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_7.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">CARAMEL COFFEE</p>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/be_3.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_8.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">PANDAN LEAVES COFFEE</p>
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/be_4.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_9.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">LIME COFFEE</p>
@@ -237,7 +237,7 @@
                         </div>
                     </div>
                     <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/be_5.png') }}" style="width: 70px"
+                        <img src="{{ asset('storage/images/product_10.png') }}" style="width: 70px"
                             class="img-fluid rounded-circle" alt="...">
                         <div>
                             <p class="ms-3 m-0 fw-bold">COFFEE POWDER</p>
@@ -307,13 +307,13 @@
                         delectus?</small>
                 </div>
                 <div class="p-2">
-                    <img src="{{ asset('storage/images/be_3.png') }}" class="rounded-4 img-fluid" alt="...">
+                    <img src="{{ asset('storage/images/product_8.png') }}" class="rounded-4 img-fluid" alt="...">
                     <p class="mt-2">BETTER COFFEE OR TEA?</p>
                     <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
                         delectus?</small>
                 </div>
                 <div class="p-2">
-                    <img src="{{ asset('storage/images/be_1.png') }}" class="rounded-4 img-fluid" alt="...">
+                    <img src="{{ asset('storage/images/product_6.png') }}" class="rounded-4 img-fluid" alt="...">
                     <p class="mt-2">PREMIUM COFFEE BEANS</p>
                     <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
                         delectus?</small>
