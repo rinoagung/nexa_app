@@ -13,10 +13,10 @@
                     <a class="nav-link active" aria-current="page" href="#products">SHOP</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#blogs">BLOG</a>
+                    <a class="nav-link active" aria-current="page" href="#categories">PAGES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#categories">PAGES</a>
+                    <a class="nav-link active" aria-current="page" href="#blogs">BLOG</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
