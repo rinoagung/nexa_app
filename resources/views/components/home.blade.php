@@ -11,11 +11,8 @@
                     <div class="w-100 h-100 p-5 d-flex justify-content-center align-items-center flex-column rounded-end-4"
                         style="background-color: #EEEDEB">
                         <h1>SPECIAL <span style="color: #C29A74">COFFEE</span></h1>
-                        <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
-                            quas
-                            eius
-                            nulla sed quia non
-                            dolores saepe tenetur quaerat.</p>
+                        <p class="text-center my-3">Dibuat dengan bahan kopi premium dan berkualitas serta diracik secara
+                            profesional di setiap tetesnya.</p>
                         <button class="btn btn-outline-dark rounded-pill">ORDER NOW</button>
                     </div>
                 </div>
@@ -23,9 +20,9 @@
         </section>
         <section>
             <div class="p-5">
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt enim quaerat
-                    aliquam, deserunt nisi
-                    voluptatem illo aspernatur reprehenderit maxime magni aliquid nemo eaque laudantium?</p>
+                <p class="text-center">Menyediakan pengalaman ngopi terbaik dengan cita rasa autentik, suasana nyaman, serta
+                    layanan berkualitas, menciptakan tempat berkumpul yang inspiratif bagi pecinta kopi dan komunitas
+                    kreatif.</p>
             </div>
         </section>
         <section id="products" class="py-5">
@@ -36,217 +33,105 @@
                 <button class="c_1_start m-1 btn btn-dark"><i class="bi bi-caret-right"></i></button>
             </div>
             <div class="carousel_1">
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_1.png') }}" class="img-fluid" alt="...">
-                    <p class="mt-2">COFFEE LATTE</p>
-                    <p style="color: #C29A74">Rp10.000</p>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_2.png') }}" class="img-fluid" alt="...">
-                    <p class="mt-2">ARABICAN</p>
-                    <p style="color: #C29A74">Rp10.000</p>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_3.png') }}" class="img-fluid" alt="...">
-                    <p class="mt-2">MOCCA</p>
-                    <p style="color: #C29A74">Rp10.000</p>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_4.png') }}" class="img-fluid" alt="...">
-                    <p class="mt-2">AMERICANO</p>
-                    <p style="color: #C29A74">Rp10.000</p>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_5.png') }}" class="img-fluid" alt="...">
-                    <p class="mt-2">HAZELNUT</p>
-                    <p style="color: #C29A74">Rp10.000</p>
-                </div>
+                @foreach ($products as $p)
+                    <div class="p-2">
+                        <img src="{{ asset('storage/images/' . $p->gambar) }}" class="img-fluid" alt="...">
+                        <p class="mt-2">{{ $p->nama_produk }}</p>
+                        <p style="color: #C29A74">Rp{{ number_format($p->harga, 0, ',', '.') }}</p>
+                    </div>
+                @endforeach
             </div>
         </section>
         <section id="categories" class="py-5">
             <div class="row">
                 <div class="col-1">
-                    <button class="c_2_end m-1 rounded-circle btn btn-secondary"><i class="bi bi-caret-left"></i></button>
+                    <button class="c_2_start m-1 rounded-circle btn btn-secondary"><i class="bi bi-caret-left"></i></button>
                 </div>
                 <div class="col-10 px-5">
                     <div class="carousel_2">
                         <div>
                             <p class="text-center fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium rerum porro fugiat eum
-                                praesentium excepturi voluptates animi dolore perferendis ex repellat a veniam deleniti
-                                facere
-                                hic eius, recusandae ducimus. Obcaecati.
+                                Secangkir kopi bukan sekadar minuman, tetapi cerita yang tersaji dalam aroma, rasa, dan
+                                momen yang menghubungkan hati, pikiran, serta persahabatan tanpa batas.
                             </p>
                         </div>
                         <div>
                             <p class="text-center fst-italic">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore facilis tenetur,
-                                nobis quos accusantium molestiae pariatur culpa aliquam quidem velit, cumque perspiciatis
-                                ipsum,
-                                omnis quia quae esse sit maxime?
+                                Kopi mengajarkan kesabaran, dari biji yang dipetik hingga tetes terakhir dalam cangkir,
+                                mengingatkan bahwa proses adalah bagian penting dari perjalanan hidup.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-center fst-italic">
+                                Setiap tegukan kopi membawa kehangatan, bukan hanya untuk tubuh tetapi juga jiwa, menjadikan
+                                pagi lebih berarti dan percakapan lebih bermakna bagi semua.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-1">
-                    <button class="c_2_start m-1 rounded-circle btn btn-dark"><i class="bi bi-caret-right"></i></button>
+                    <button class="c_2_end m-1 rounded-circle btn btn-dark"><i class="bi bi-caret-right"></i></button>
                 </div>
             </div>
         </section>
         <section id="catalogs" class="py-5">
             <div class="row">
-                <div class="col-3 p-0">
-                    <img src="{{ asset('storage/images/thumb_1.png') }}" class="img-fluid" alt="...">
-                </div>
-                <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
-                    <p>MORNING COFFEE</p>
-                    <small class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis.</small>
-                    <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
-                </div>
-                <div class="col-3 p-0">
-                    <img src="{{ asset('storage/images/thumb_2.png') }}" class="img-fluid" alt="...">
-                </div>
-                <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
-                    <p>COFFEE & PAPPER</p>
-                    <small class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis.</small>
-                    <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
-                </div>
-                <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
-                    <p>GREEN COFFEE</p>
-                    <small class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis.</small>
-                    <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
-                </div>
-                <div class="col-3 p-0">
-                    <img src="{{ asset('storage/images/thumb_3.png') }}" class="img-fluid" alt="...">
-                </div>
-                <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
-                    <p>OCEAN COFFEE</p>
-                    <small class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis.</small>
-                    <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
-                </div>
-                <div class="col-3 p-0">
-                    <img src="{{ asset('storage/images/thumb_4.png') }}" class="img-fluid" alt="...">
-                </div>
+                @foreach ($categories->take(2) as $k)
+                    <div class="col-3 p-0">
+                        <img src="{{ asset('storage/images/' . $k->gambar) }}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
+                        <p>{{ $k->nama_kategori }}</p>
+                        <small class="my-2">{{ $k->deskripsi }}</small>
+                        <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
+                    </div>
+                @endforeach
+                @foreach ($categories->skip(2) as $k)
+                    <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
+                        <p>{{ $k->nama_kategori }}</p>
+                        <small class="my-2">{{ $k->deskripsi }}</small>
+                        <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
+                    </div>
+                    <div class="col-3 p-0">
+                        <img src="{{ asset('storage/images/' . $k->gambar) }}" class="img-fluid" alt="...">
+                    </div>
+                @endforeach
             </div>
         </section>
         <section class="py-5">
             <div class="row">
                 <div class="col-6 pe-5">
                     <p class="fs-2">NEW ARRIVALS</p>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_1.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">BREAD COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
+                    @foreach ($new_products as $np)
+                        <div class="d-flex mt-2 align-items-center">
+                            <img src="{{ asset('storage/images/' . $np->gambar) }}" style="width: 70px"
+                                class="img-fluid rounded-circle" alt="...">
+                            <div>
+                                <p class="ms-3 m-0 fw-bold">{{ $np->nama_produk }}</p>
+                                <p class="ms-3 m-0">{{ $np->deskripsi }}</p>
+                            </div>
+                            <div class="ms-auto">
+                                Rp{{ number_format($np->harga, 0, ',', '.') }}
+                            </div>
                         </div>
-                        <div class="ms-auto">
-                            Rp8.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_2.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">GAME COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp13.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_3.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">MINI COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp11.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_4.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">PINEAPPLE COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp45.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_5.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">LAVENDER COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp34.000
-                        </div>
-                    </div>
+                    @endforeach
                     <p class="fw-bold text-decoration-underline mt-4" role="button">VIEW ALL</p>
                 </div>
                 <div class="col-6 ps-5">
                     <p class="fs-2">BEST SELLING</p>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_6.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">COFFEE BEANS</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
+                    @foreach ($best_products as $bp)
+                        <div class="d-flex mt-2 align-items-center">
+                            <img src="{{ asset('storage/images/' . $bp->gambar) }}" style="width: 70px"
+                                class="img-fluid rounded-circle" alt="...">
+                            <div>
+                                <p class="ms-3 m-0 fw-bold">{{ $bp->nama_produk }}</p>
+                                <p class="ms-3 m-0">{{ $bp->deskripsi }}</p>
+                            </div>
+                            <div class="ms-auto">
+                                Rp{{ number_format($bp->harga, 0, ',', '.') }}
+                            </div>
                         </div>
-                        <div class="ms-auto">
-                            Rp17.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_7.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">CARAMEL COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp18.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_8.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">PANDAN LEAVES COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp6.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_9.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">LIME COFFEE</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp14.000
-                        </div>
-                    </div>
-                    <div class="d-flex mt-2 align-items-center">
-                        <img src="{{ asset('storage/images/product_10.png') }}" style="width: 70px"
-                            class="img-fluid rounded-circle" alt="...">
-                        <div>
-                            <p class="ms-3 m-0 fw-bold">COFFEE POWDER</p>
-                            <p class="ms-3 m-0">Lorem, ipsum dolor.</p>
-                        </div>
-                        <div class="ms-auto">
-                            Rp12.000
-                        </div>
-                    </div>
+                    @endforeach
                     <p class="fw-bold text-decoration-underline mt-4" role="button">VIEW ALL</p>
                 </div>
             </div>
@@ -294,30 +179,14 @@
         <section id="blogs" class="py-5">
             <p class="fs-2 mb-3">READ OUR BLOGS</p>
             <div class="carousel_3">
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/coffee_1.png') }}" class="rounded-4 img-fluid" alt="...">
-                    <p class="mt-2">IS COFFEE LATTE DELICIOUS?</p>
-                    <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-                        delectus?</small>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/thumb_2.png') }}" class="rounded-4 img-fluid" alt="...">
-                    <p class="mt-2">DRINK COFFEE IN THE MORNING</p>
-                    <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-                        delectus?</small>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/product_8.png') }}" class="rounded-4 img-fluid" alt="...">
-                    <p class="mt-2">BETTER COFFEE OR TEA?</p>
-                    <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-                        delectus?</small>
-                </div>
-                <div class="p-2">
-                    <img src="{{ asset('storage/images/product_6.png') }}" class="rounded-4 img-fluid" alt="...">
-                    <p class="mt-2">PREMIUM COFFEE BEANS</p>
-                    <small style="color: #C29A74">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-                        delectus?</small>
-                </div>
+                @foreach ($blogs as $b)
+                    <div class="p-2">
+                        <img src="{{ asset('storage/images/' . $b->gambar) }}" class="rounded-4 img-fluid"
+                            alt="...">
+                        <p class="mt-2">{{ $b->judul_blog }}</p>
+                        <small style="color: #C29A74">{{ $b->excerpt }}</small>
+                    </div>
+                @endforeach
             </div>
         </section>
         <section class="py-5">
