@@ -4,7 +4,7 @@
         <section id="home" class="py-5">
             <div class="row">
                 <div class="col-6 p-0">
-                    <img src="{{ asset('storage/images/jumbotron_1.jpg') }}" class="img-fluid d-block ms-auto rounded-start-4"
+                    <img src="{{ asset('images/jumbotron_1.jpg') }}" class="img-fluid d-block ms-auto rounded-start-4"
                         alt="...">
                 </div>
                 <div class="col-6 p-0">
@@ -29,13 +29,13 @@
             <div class="d-flex justify-content-end align-items-center">
                 <p class="fs-2 me-auto">SHOP BEST COFFEE</p>
                 <a href="javascript:;" class="text-dark me-4">VIEW ALL</a>
-                <button class="c_1_end m-1 btn btn-secondary"><i class="bi bi-caret-left"></i></button>
-                <button class="c_1_start m-1 btn btn-dark"><i class="bi bi-caret-right"></i></button>
+                <button class="c_1_start m-1 btn btn-secondary"><i class="bi bi-caret-left"></i></button>
+                <button class="c_1_end m-1 btn btn-dark"><i class="bi bi-caret-right"></i></button>
             </div>
             <div class="carousel_1">
                 @foreach ($products as $p)
                     <div class="p-2">
-                        <img src="{{ asset('storage/images/' . $p->gambar) }}" class="img-fluid" alt="...">
+                        <img src="{{ asset('images/' . $p->gambar) }}" class="img-fluid" alt="...">
                         <p class="mt-2">{{ $p->nama_produk }}</p>
                         <p style="color: #C29A74">Rp{{ number_format($p->harga, 0, ',', '.') }}</p>
                     </div>
@@ -78,7 +78,7 @@
             <div class="row">
                 @foreach ($categories->take(2) as $k)
                     <div class="col-3 p-0">
-                        <img src="{{ asset('storage/images/' . $k->gambar) }}" class="img-fluid" alt="...">
+                        <img src="{{ asset('images/' . $k->gambar) }}" class="img-fluid" alt="...">
                     </div>
                     <div class="col-3 text-center d-flex justify-content-center align-items-center flex-column">
                         <p>{{ $k->nama_kategori }}</p>
@@ -93,7 +93,7 @@
                         <p class="fw-bold text-decoration-underline" role="button">SHOP CATEGORY</p>
                     </div>
                     <div class="col-3 p-0">
-                        <img src="{{ asset('storage/images/' . $k->gambar) }}" class="img-fluid" alt="...">
+                        <img src="{{ asset('images/' . $k->gambar) }}" class="img-fluid" alt="...">
                     </div>
                 @endforeach
             </div>
@@ -104,7 +104,7 @@
                     <p class="fs-2">NEW ARRIVALS</p>
                     @foreach ($new_products as $np)
                         <div class="d-flex mt-2 align-items-center">
-                            <img src="{{ asset('storage/images/' . $np->gambar) }}" style="width: 70px"
+                            <img src="{{ asset('images/' . $np->gambar) }}" style="width: 70px"
                                 class="img-fluid rounded-circle" alt="...">
                             <div>
                                 <p class="ms-3 m-0 fw-bold">{{ $np->nama_produk }}</p>
@@ -121,7 +121,7 @@
                     <p class="fs-2">BEST SELLING</p>
                     @foreach ($best_products as $bp)
                         <div class="d-flex mt-2 align-items-center">
-                            <img src="{{ asset('storage/images/' . $bp->gambar) }}" style="width: 70px"
+                            <img src="{{ asset('images/' . $bp->gambar) }}" style="width: 70px"
                                 class="img-fluid rounded-circle" alt="...">
                             <div>
                                 <p class="ms-3 m-0 fw-bold">{{ $bp->nama_produk }}</p>
@@ -181,8 +181,7 @@
             <div class="carousel_3">
                 @foreach ($blogs as $b)
                     <div class="p-2">
-                        <img src="{{ asset('storage/images/' . $b->gambar) }}" class="rounded-4 img-fluid"
-                            alt="...">
+                        <img src="{{ asset('images/' . $b->gambar) }}" class="rounded-4 img-fluid" alt="...">
                         <p class="mt-2">{{ $b->judul_blog }}</p>
                         <small style="color: #C29A74">{{ $b->excerpt }}</small>
                     </div>
@@ -193,28 +192,22 @@
             <p class="fs-2 mb-3">FOLLOW OUR INSTAGRAM</p>
             <div class="row">
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_1.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_1.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_2.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_2.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_3.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_3.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_4.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_4.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_5.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_5.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
                 <div class="col-2">
-                    <img src="{{ asset('storage/images/ig_6.png') }}" class="img-fluid d-block m-auto rounded-4"
-                        alt="...">
+                    <img src="{{ asset('images/ig_6.png') }}" class="img-fluid d-block m-auto rounded-4" alt="...">
                 </div>
             </div>
         </section>
